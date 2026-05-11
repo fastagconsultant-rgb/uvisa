@@ -1,6 +1,22 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import HomePage from './HomePage'
 import SearchPage from './SearchPage'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import Countries from './components/Countries'
+import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
+
+function HomePage() {
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <Countries />
+      <Testimonials />
+      <Footer />
+    </div>
+  )
+}
 
 function App() {
   return (
@@ -13,4 +29,5 @@ function App() {
   )
 }
 
+export { HomePage }
 export default App
